@@ -1,0 +1,66 @@
+
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #f8fafc;
+    color: #002c5c;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/* Custom CSS */
+header{
+    margin-top: 60px;
+}
+.count-boxes{
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.count-box{
+    width: 32%;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #313a49;
+    border: 0px;
+    border-radius: 16px;
+    padding: 12px 24px;
+}
+
+.count-1, .count-2, .count-3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+.count-1{
+    color: #002c5c;
+}
+.count-2{
+    color: #26bf8c;
+}
+.count-3{
+    color: #ef4b4b;
+}
