@@ -47,13 +47,13 @@
             <h3>Available Jobs</h3>
             <!-- Buttons -->
             <div class="btns">
-                <div class="btn">
+                <div class="btn active"  id="tab-all" onclick="switchTab('all')">
                     <a href="#">All</a>
                 </div>
-                <div class="btn">
+                <div class="btn active" id="tab-interviewed" onclick="switchTab('interviewed')">
                     <a href="#">Interviewed</a>
                 </div>
-                <div class="btn">
+                <div class="btn active" id="tab-rejected" onclick="switchTab('rejected')">
                     <a href="#">Rejected</a>
                 </div>
             </div>
@@ -85,8 +85,8 @@
                 <br>
 
                 <div class="card-btn">
-                    <a href="#" class="interviewed">Interviewed</a>
-                    <a href="#" class="rejected">Rejected</a>
+                    <a href="#" class="interviewed" onclick="switchTab('interviewed')">Interviewed</a>
+                    <a href="#" class="rejected" onclick="switchTab('rejected')">Rejected</a>
                 </div>
 
             </div>
@@ -97,14 +97,23 @@
      <section class="interviewed-section">
         <div class="container">
             <h4>Interviewed Section</h4>
+            <img class="no-results" src="./no-results.png" alt="no-results.png">
+            <p>No Interview Available</p>
         </div>
      </section>
 
      <!-- Rejected Section -->
-      <section class="rejected-secction">
+      <section class="rejected-section">
         <div class="container">
             <h4>Rejected Section</h4>
+            <img class="no-results" src="./no-results.png" alt="no-results.png">
+            <p>No Rejection Available</p>
         </div>
       </section>
+
+
+
+      <!-- Link JS -->
+       <script src="./index.js"></script>
 </body>
 </html>
