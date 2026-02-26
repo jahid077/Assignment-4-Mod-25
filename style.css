@@ -112,6 +112,25 @@ h3{
     margin: 24px 0px;
 }
 
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header i{
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    border: 1px solid #002c5c;
+    border-radius: 24px;
+}
+.card-header i:active{
+    background-color: #f8fafc;
+    color: #ef4b4b;
+    border: 2px solid #ef4b4b;
+}
+
+
 .card h3,p{
     color: #002c5c;
 }
@@ -122,6 +141,7 @@ h3{
 .card-btn{
     display: flex;
     gap: 24px;
+    font-weight: 700;
 }
 .interviewed{
     color: #26bf8c;
