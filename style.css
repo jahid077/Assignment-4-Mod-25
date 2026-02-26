@@ -21,6 +21,11 @@ h1{
     font-weight: 800;
 }
 
+h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .container{
     width: 100%;
     max-width: 1140px;
@@ -83,7 +88,7 @@ h3{
     margin: 24px 0px;
 }
 .btn{
-    /* background-color: #3b82f6; */
+    display: inline-block;
     background-color: #fff;
     color: #64748b;
     font-weight: 600;
@@ -94,5 +99,51 @@ h3{
 
 .btn:active{
     background-color: #3b82f6;
+    color: #fff;
+}
+
+
+/* Job-cards */
+
+.card{
+    background-color: #fff;
+    padding: 24px;
+    color: #64748b;
+    margin: 24px 0px;
+}
+
+.card h3,p{
+    color: #002c5c;
+}
+.card p small{
+    color: #64748b;
+}
+
+.card-btn{
+    display: flex;
+    gap: 24px;
+}
+.interviewed{
+    color: #26bf8c;
+    padding: 8px 16px;
+    border: 2px solid #26bf8c;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.interviewed:active{
+    background-color: #26bf8c;
+    color: #fff;
+}
+
+.rejected{
+    color: #ef4b4b;
+    padding: 8px 16px;
+    border: 2px solid #ef4b4b;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.rejected:active{
+    background-color: #ef4b4b;
     color: #fff;
 }
