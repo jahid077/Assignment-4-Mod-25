@@ -59,55 +59,146 @@
             </div>
 
             <!-- Job-cards -->
-            <div class="card" id="all-container">
-                <div class="card-header">
-                    <h3>Mobile First Corp.</h3>
-                    <i class="fa-regular fa-trash-can"></i>
+             <div id="all-container">
+                 
+                <!-- Job-1 -->
+                <div class="card">
+                    <div class="card-count" id="job-1">
+
+                        <div class="card-header">
+                        <h3>Mobile First Corp.</h3>
+                        <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        
+                        <br>
+
+                        <p>
+                            <small>Remote</small>
+                            . 
+                            <small>Full-Time</small>
+                            . 
+                            <small>$130,000 - $175,000</small>
+                        </p>
+
+                        <br>
+                        <div class="btn status-btn">
+                            <a href="#">NOT APPLIED</a>
+                        </div>
+                        <br><br>
+
+                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <br>
+
+                        <div class="card-btn">
+                            <a href="#" class="interviewed" onclick="updateJobStatus(this, 'interviewed')">Interviewed</a>
+                            <a href="#" class="rejected" onclick="updateJobStatus(this, 'rejected')">Rejected</a>
+                        </div>
+
+                    </div>
+                    <hr>
                 </div>
-                
-                <br>
 
-                <p>
-                    <small>Remote</small>
-                    . 
-                    <small>Full-Time</small>
-                    . 
-                    <small>$130,000 - $175,000</small>
-                </p>
+                <!-- Job-2 -->
+                <div class="card">
+                    <div class="card-count" id="job-2">
 
-                <br>
-                <div class="btn">
-                    <a href="#">NOT APPLIED</a>
+                        <div class="card-header">
+                        <h3>Mobile First Corp.</h3>
+                        <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        
+                        <br>
+
+                        <p>
+                            <small>Remote</small>
+                            . 
+                            <small>Full-Time</small>
+                            . 
+                            <small>$130,000 - $175,000</small>
+                        </p>
+
+                        <br>
+                        <div class="btn status-btn">
+                            <a href="#">NOT APPLIED</a>
+                        </div>
+                        <br><br>
+
+                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <br>
+
+                        <div class="card-btn">
+                            <a href="#" class="interviewed" onclick="updateJobStatus(this, 'interviewed')">Interviewed</a>
+                            <a href="#" class="rejected" onclick="updateJobStatus(this, 'rejected')">Rejected</a>
+                        </div>
+
+                    </div>
+                    <hr>
                 </div>
-                <br><br>
 
-                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                <br>
 
-                <div class="card-btn">
-                    <a href="#" class="interviewed" onclick="switchTab('interviewed')">Interviewed</a>
-                    <a href="#" class="rejected" onclick="switchTab('rejected')">Rejected</a>
+                 <!-- Job-3 -->
+                <div class="card">
+                    <div class="card-count" id="job-3">
+
+                        <div class="card-header">
+                        <h3>Mobile First Corp.</h3>
+                        <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        
+                        <br>
+
+                        <p>
+                            <small>Remote</small>
+                            . 
+                            <small>Full-Time</small>
+                            . 
+                            <small>$130,000 - $175,000</small>
+                        </p>
+
+                        <br>
+                        <div class="btn status-btn">
+                            <a href="#">NOT APPLIED</a>
+                        </div>
+                        <br><br>
+
+                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <br>
+
+                        <div class="card-btn">
+                            <a href="#" class="interviewed" onclick="updateJobStatus(this, 'interviewed')">Interviewed</a>
+                            <a href="#" class="rejected" onclick="updateJobStatus(this, 'rejected')">Rejected</a>
+                        </div>
+
+                    </div>
+                    <hr>
                 </div>
 
-            </div>
+
+             </div>
         </div>
     </section>
 
     <!-- interviewed Section -->
-     <section class="interviewed-section" id="interviewed-container">
-        <div class="container">
+     <section class="interviewed-section">
+        <div class="container" id="interviewed-container">
             <h4>Interviewed Section</h4>
-            <img class="no-results" src="./no-results.png" alt="no-results.png">
-            <p>No Interview Available</p>
+            
+            <div class="no-results-message">
+                <img class="no-results" src="./no-results.png" alt="no-results.png">
+                <p>No Interview Available</p>
+            </div>
+            
         </div>
      </section>
 
      <!-- Rejected Section -->
-      <section class="rejected-section" id="rejected-container">
-        <div class="container">
+      <section class="rejected-section">
+        <div class="container" id="rejected-container">
             <h4>Rejected Section</h4>
-            <img class="no-results" src="./no-results.png" alt="no-results.png">
-            <p>No Rejection Available</p>
+            <div class="no-results-message">
+                <img class="no-results" src="./no-results.png" alt="no-results.png">
+                <p>No Interview Available</p>
+            </div>
         </div>
       </section>
 
