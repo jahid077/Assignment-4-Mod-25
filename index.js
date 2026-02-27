@@ -123,4 +123,32 @@ function updateCounts(){
 document.addEventListener('DOMContentLoaded', function(){
     switchTab('all');
     updateCounts();
+    
+    document.body.addEventListener('click', function(event) {
+        if (event.target.classList.contains('fa-trash-can')) {
+            const clickedCard = event.target.closest('.card');
+            if (!clickedCard) return;
+
+            const cardCountDiv = clickedCard.querySelector('.card-count');
+            if (!cardCountDiv || !cardCountDiv.id) return;
+
+            const cardId = cardCountDiv.id;
+
+            const originalCardElement = document.querySelector(`#all-container #${cardId}`);
+
+            if (originalCardElement) {
+                const originalCardToDelete = originalCardElement.closest('.card');
+                if (originalCardToDelete) {
+                    originalCardToDelete.remove();
+                }
+            }
+
+            updateCounts();
+        }
+    });
+
+
 })
+
+
+
